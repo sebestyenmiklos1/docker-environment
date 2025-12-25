@@ -2,10 +2,10 @@
 
 This will process the Dockerfile.in templates and generate Dockerfiles for each target.
 
-## Initialize Python Virtual Environment
+## 1. Initialize Python Virtual Environment
 
-!!!note "Prequisets"
-    Python is installed. >3.13.9
+> [!NOTE]
+> Python is installed. >3.13.9
 
 Open a terminal in this directory and run:
 
@@ -30,7 +30,13 @@ Activate the virtual environment:
 pip install -r requirements.txt
 ```
 
-## 3. Run the Dockerfile Generator
+## 3. Install pre-commit hooks (for contributors)
+
+```sh
+pre-commit install
+```
+
+## 4. Run the Dockerfile Generator
 
 To generate Dockerfiles, run:
 
