@@ -14,6 +14,7 @@ def preprocess(line):
         try:
             variables["JENKINS_USER_ID"] = str(pwd.getpwnam("jenkins").pw_uid)
         except KeyError:
+            # Maybe no jenkins user on this system
             pass
     else:
         # Fallback for Windows
